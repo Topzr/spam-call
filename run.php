@@ -24,7 +24,13 @@ class MyCall {
 			echo $this->logo;
 			echo " \e[37m[\e[34m*\e[37m] Nomor \e[37m(\e[34m08\e[37m) : \e[33m";
 			$phone = trim(fgets(STDIN));
-			if(substr($phone, 0, 2) !== "08") {
+			if(substr($phone,
+
+
+
+
+
+ {
 				throw new Exception("\n \e[31mMessage \e[37m: gunakan angka awalan 08\n\n");
 				exit(0);}
 
